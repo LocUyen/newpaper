@@ -1,0 +1,453 @@
+/* 
+Tổng quan đến chi tiết
+Từ ngoài vào trong
+Từ sau ra trước
+Từ trên xuống dưới
+Từ trái sang phải
+ */
+
+body{
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+h3{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+p{
+    margin: 0;
+}
+/* =================== HEADER ============== */
+#header{
+    background: #23282d;
+    padding-top: 27px;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#logo img{
+    max-width: 60%;
+    height: auto;
+}
+/* ------Responsive navbar------ */
+#navbar-toggle{
+    color: #e9e9e9;
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.responsive-container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+ul#responsive-menu {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #23282d;
+    width: 100%;
+    text-align: left;
+    display: none;
+    padding: 0;
+    padding-top: 10px;
+}
+ul#responsive-menu .open{
+    transform: rotate(180deg);
+}
+ul#responsive-menu>li{
+    position: relative;
+    border-bottom: 1px solid #333;
+
+}
+ul#responsive-menu li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #e9e9e9;
+    font-weight: lighter;
+    display: block;
+}
+ul#responsive-menu>li:hover>a{
+    color: #4db2ec;
+}
+ul#responsive-menu .responsive-menu-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #e9e9e9;
+    font-size: 14px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+
+}
+ul#responsive-menu ul.sub-menu{
+    background: #2e2f30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px ;
+    display: none;
+}
+ul#responsive-menu ul.sub-menu li a{
+    padding: 10px 0;
+}
+ul#responsive-menu ul.sub-menu li:hover a{
+    color: #4db2ec;
+}
+/* --------------------- */
+form#search{
+    position: relative;
+    display: none;
+    
+}
+form#search input{
+    width: 247px;
+    border: none;
+    background: #131619;
+    padding: 10px 0px 10px 16px;
+    color: #6f6f70;
+}
+form#search input:focus{
+    border: none;
+}
+form#search button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #6f6f70;
+    background: #131619;
+    border: none;
+    padding: 10px 9px;
+
+}
+
+ul#main-menu{
+    padding: 0;
+    display: none;
+}
+ul#main-menu li{
+    position: relative;
+}
+
+ul#main-menu li a i{
+    font-size: 10px;
+}
+
+ul#main-menu li a{
+    display: block;
+    text-decoration: none;
+    color: #eeeeee;
+    padding: 6px 20px;
+}
+ul#main-menu li:first-child a{
+    padding-left: 0;
+}
+ul#main-menu>li:hover>a{
+    color: #4db2ec;
+}
+
+ul#main-menu li ul.sub-menu{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #2e2f30;
+    width: 220px;
+    text-align: left;
+    font-weight: lighter;
+    display: none;
+    transition: display 0.5s;
+}
+ul#main-menu li ul.sub-menu li:hover a{
+    color: #4db2ec;
+}
+ul.sub-menu::before{
+    content: "";
+    border-width: 10px 73px;
+    border-style: solid;
+    /* border-color: transparent transparent white transparent; */
+    position: absolute;
+    left: 0px;
+    top: -13px;
+    opacity: 0;
+}
+ul#main-menu ul.sub-menu li:first-child a{
+    padding-left: 20px;
+}
+ul#main-menu li:hover ul.sub-menu{
+    display: block;
+}
+
+nav{
+    flex: 100%;
+    margin-top: 9px;
+    border-right: 10px solid #ff2d2d;
+}
+/* =================== FEATURE POST ============== */
+#featured-post{
+    margin-bottom: 22px;
+
+}
+.box .box-head h3{
+    display: inline-block;
+    background: #23282d;
+    color: #fff;
+
+    padding: 1px 15px;
+}
+.box.featured-post .box-body{
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+ul.list-featured-post{
+    display: block;
+}
+ul.list-featured-post li {
+    flex: 360px 0 1;
+
+
+}
+ul.list-featured-post li a.post-title {
+    color: #5f5f5f;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+ul.list-featured-post li a.post-title:hover {
+    color: #4db2ec;
+}
+ul.list-featured-post li .post-thumb{
+    display: block;
+    overflow: hidden;
+    height: auto;
+
+}
+ul.list-featured-post li .post-thumb:hover img {
+    transform: scale(1.05);
+}
+ul.list-featured-post li .post-thumb img {
+    transition: all 0.5s;
+    /* display: block; */
+}
+/* =================== WP-CONTENT ============== */
+/* --------content------- */
+#content{
+    flex: 765px;
+    /* padding-right: 15px; */
+}
+.box.new-post .box-head{
+    border-bottom: 2px solid #4db2ec;
+}
+.box.new-post .box-head h3{
+    background: #4db2ec;
+    font-size: 16px;
+    color: #fff;
+
+}
+.box.new-post .box-body{
+    margin-top: 20px;
+}
+ul.list-post{
+    display: block;
+}
+ul.list-post li{
+    /* display: flex; */
+    margin-bottom: 34px;
+}
+ul.list-post li .post-thumb{
+    display: block;
+    flex-basis: 278px;
+    /* padding-right: 15px; */
+}
+
+ul.list-post li .post-info{
+    display: block;
+    flex: 472px;
+    /* padding-left: 15px; */
+}
+ul.list-post li .post-info .post-title{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+ul.list-post li .post-info .post-title:hover,ul.list-post li .post-info .post-title.active{
+    color: #4db2ec;
+}
+ul.list-post li .post-info .post-published{
+    padding: 5px 0;
+    font-size: 11px;
+}
+ul.list-post li .post-info .post-published .post-author{
+    text-decoration: none;
+    color: #000;
+
+}
+ul.list-post li .post-info .post-published .post-date{
+    color: #aaaaaa;
+
+}
+ul.list-post li .post-info .post-excerpt{
+    color: #aaaaaa;
+    font-size: 13px;
+
+}
+/* --------sidebar------- */
+#sidebar{
+    flex: 350px;
+    padding-left: 15px;
+    display: none;
+}
+a.ads{
+    display: block;
+    margin-bottom: 40px;
+}
+
+.box.top-topic .box-head{
+    border-bottom: 1px solid #ff2d2d;
+}
+.box.top-topic .box-head h3{
+    background: #ff2d2d;
+    color: #fff;
+}
+
+ul.list-topic li a{
+    text-decoration: none;
+    color: #000;
+    padding: 6px 0px;
+    position: relative;
+    display: block;
+    font-weight: normal;
+}
+ul.list-topic li:first-child{
+    padding-top: 10px;
+}
+ul.list-topic li a:hover{
+    color: #ff2d2d;
+}
+ul.list-topic li a .num-post{
+    position: absolute;
+    right: 20px;
+}
+/* ===============footer============ */
+#footer{
+    background: #2e2f30;
+    /* padding-top: 20px ; */
+    padding-bottom: 20px;
+}
+.responsive-footer{
+    display: block;
+}
+#footer .box .box-head {
+    background: #2e2f30;
+    color: #e9e9e9;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#footer .box .box-head h3{
+    background: #2e2f30;
+    padding-left: 0;
+    font-size: 15px;
+}
+#footer .box .box-body{
+    /* padding-top: 40px; */
+}
+.box.logo-footer{
+    flex: 278px;
+    padding-right: 15px;
+}
+.box.logo-footer .box-head{
+    visibility: hidden;
+}
+.box.logo-footer .box-body img{
+    /* padding-top: 10px; */
+    max-width: 35%;
+}
+.box.about-us{
+    flex: 682px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box.about-us .box-body p{
+    font-size: 12px;
+    color: #e9e9e9;
+}
+.box.about-us .box-body a{
+    font-size: 14px;
+    color: #4db2ec;
+    text-decoration: none;
+}
+.box.follow-us{
+    flex: 180px;
+    /* padding-left: 15px; */
+}
+
+ul.list-icon li{
+    margin-right: 11px;
+}
+ul.list-icon li a{
+    background:#434648;
+    color: #eeeeee;
+    padding: 6px 10px;
+    display: block;
+}
+ul.list-icon li a:hover{
+    color: #4db2ec;
+
+}
+/* ===============WP-Copyright============ */
+#wp-copyright{
+    background: #222527;
+    padding: 11px 0;
+    display: none;
+}
+
+#wp-copyright .copyright{
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+ul#footer-menu li{
+    display: block;
+
+}
+ul#footer-menu li a{
+    text-decoration: none;
+    color: #eeeeee;
+    padding: 0 13px;
+    font-weight: lighter;
+}
+ul#footer-menu li a:last-child{
+    padding-right: 0;
+}
+ul#footer-menu li a:hover{
+    color: #4db2ec;
+}

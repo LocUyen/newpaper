@@ -1,0 +1,176 @@
+/* Small devices (landscape phones, 310px and up)  */
+@media (min-width: 310px){
+    /* ------featured-post------- */
+    ul.list-featured-post{
+        display: flex;
+    }
+    ul.list-featured-post li a.post-title{
+        padding: 0 5px;
+        font-size: 12px;
+        text-align: left;
+    }
+    /* ------new-post------- */
+    ul.list-post li{
+        display: flex;
+    }
+    ul.list-post li .post-thumb{
+        padding-right: 15px;
+    }
+}    
+/* Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px){
+    /* ------featured-post------- */
+    ul.list-featured-post{
+        display: flex;
+    }
+    ul.list-featured-post li a.post-title{
+        padding: 0 5px;
+        font-size: 12px;
+        text-align: left;
+    }
+    /* ------new-post------- */
+    ul.list-post li{
+        display: flex;
+    }
+    ul.list-post li .post-thumb{
+        padding-right: 15px;
+    }
+}    
+/* // Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {
+    /* ------featured-post------- */
+    ul.list-featured-post li a.post-title{
+        font-size: 15px;
+    
+
+    }
+    
+    /* ------new-post------- */
+    #content{
+        padding-right: 15px;
+    }
+    ul.list-post li{
+        display: flex;
+    }
+    ul.list-post li .post-info{
+        
+        padding-left: 15px;
+    }
+    ul.list-post li .post-info .post-title{
+        font-size: 21px;
+    }
+    
+    /* ------footer------- */
+    #footer{
+        background: #2e2f30;
+        padding-top: 20px ;
+        padding-bottom: 20px;
+    }
+    .responsive-footer{
+        display: flex;
+    }
+    #footer .box .box-head h3{
+        font-size: 21px;
+    }
+    /* #footer .box .box-body{
+        padding-top: 40px;
+    } */
+    .box.about-us{
+        flex: 682px;
+        /* padding-right: 180px; */
+        padding-left: 15px;
+        
+    }
+    .box.logo-footer .box-body img{
+        padding-top: 10px;
+        max-width: 100%;
+    }
+    .box.about-us .box-body p{
+        font-size: 14px;
+    }
+    .box.follow-us{
+        padding-left: 15px;
+    }
+    #footer .box .box-head {
+        font-size: 18px;
+    }
+}
+/*  Large devices (desktops, 992px and up) /٠ */
+@media (min-width: 992px) {
+    /* ------header------- */
+    #header {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+    #logo img{
+        max-width: 100%;
+        height: auto;
+    }
+    #navbar-toggle{
+        display: none;
+    }
+    form#search{
+        display: block;
+    }
+    ul#main-menu{
+        display: flex;
+    }
+    ul#responsive-menu{
+        display: none;
+    }
+    /* ------featured-post------- */
+
+    .box.featured-post .box-body{
+        padding-bottom: 30px;
+
+    }
+    ul.list-featured-post{
+        display: flex;
+    }
+    
+    ul.list-featured-post li .post-thumb{
+       
+        /* height: 239px; */
+    
+    }
+    ul.list-featured-post li a.post-title{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        padding: 0 0px;
+
+    }
+    /* ------sidebar------- */
+    
+    #sidebar{
+        display: block;
+    }
+    /* ------footer------- */
+    #footer{
+        background: #2e2f30;
+        padding-top: 53px ;
+        padding-bottom: 75px;
+    }
+    #footer .box .box-body{
+        padding-top: 40px;
+    }
+    /* --------WP-Copyright------*/
+    #wp-copyright{
+        background: #222527;
+        padding: 11px 0;
+        display: block;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up)  */
+@media (min-width: 1200px){}
+
+    /* ------featured-post------- */
+
+    ul.list-featured-post li .post-thumb {
+        /* height: 239px; */
+    }
+
+    /* --------WP-Copyright------*/
+    .box.about-us{
+        padding-right: 50px;
+    }
